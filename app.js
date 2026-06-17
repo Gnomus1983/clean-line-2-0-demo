@@ -136,6 +136,7 @@ document.body.addEventListener('click', e=>{
   if(fl){ setTimeout(()=>scrollFilter(fl.dataset.filterLink), 60); }
 
   if(e.target.matches('[data-open-lead]')) $('#leadDialog')?.showModal();
+  if(e.target.closest('.dialog-close')) $('#leadDialog')?.close();
 });
 
 $('#cartButton')?.addEventListener('click', openCart);
