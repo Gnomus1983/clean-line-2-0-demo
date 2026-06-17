@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CleanLine 2.0 — европейская бытовая химия в Молдове</title>
-  <meta name="description" content="Демо нового современного интернет-магазина CleanLine: каталог бытовой химии, опт, PWA-приложение, SEO-страницы, CRM и AI-консультант." />
-  <meta name="theme-color" content="#0f8a70" />
-  <meta property="og:title" content="CleanLine 2.0 — современный сайт и PWA-приложение" />
-  <meta property="og:description" content="Демо витрины, каталога, B2B-направления, SEO и PWA-приложения для магазина бытовой химии." />
+  <title>CleanLine — европейская бытовая химия в Молдове</title>
+  <meta name="description" content="CleanLine — современный интернет-магазин европейской бытовой химии и товаров для дома с доставкой по Кишинёву и всей Молдове." />
+  <meta name="theme-color" content="#17352f" />
+  <meta property="og:title" content="CleanLine — европейская бытовая химия в Молдове" />
+  <meta property="og:description" content="Каталог бытовой химии, акции, наборы для дома, оптовые поставки и PWA-приложение для удобных повторных заказов." />
   <meta property="og:type" content="website" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon-192.png" />
@@ -16,7 +16,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Store",
-    "name": "CleanLine 2.0 Demo",
+    "name": "CleanLine",
     "description": "Европейская бытовая химия, товары для дома и оптовые поставки по Молдове",
     "areaServed": "Moldova",
     "telephone": "+37362047482",
@@ -25,102 +25,103 @@
   </script>
 </head>
 <body>
-  <div class="top-strip">
-    <span>Демо-концепция для CleanLine</span>
-    <span>SEO + магазин + PWA + CRM + AI-консультант</span>
-  </div>
-
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="CleanLine demo home">
+    <a class="brand" href="#top" aria-label="CleanLine home">
       <span class="brand-mark">CL</span>
-      <span><strong>CleanLine</strong><small>2.0 demo</small></span>
+      <span class="brand-text"><strong>CleanLine</strong><small>European Home Care</small></span>
     </a>
+
     <nav class="desktop-nav" aria-label="Основная навигация">
       <a href="#catalog">Каталог</a>
-      <a href="#b2b">Опт</a>
+      <a href="#offers">Акции</a>
+      <a href="#wholesale">Опт</a>
       <a href="#app">Приложение</a>
-      <a href="#seo">SEO</a>
-      <a href="#offer">Пакеты</a>
+      <a href="#delivery">Доставка</a>
     </nav>
+
     <div class="header-actions">
       <a class="ghost-btn" href="tel:+37362047482">Позвонить</a>
       <button class="primary-btn" data-open-lead>Получить прайс</button>
-      <button class="cart-pill" id="cartButton" aria-label="Открыть корзину">🛒 <span id="cartCount">0</span></button>
+      <button class="cart-pill" id="cartButton" aria-label="Открыть корзину"><span>Корзина</span><b id="cartCount">0</b></button>
     </div>
   </header>
 
   <main>
     <section class="hero section-pad">
       <div class="hero-copy">
-        <div class="eyebrow">Новая витрина + Android/PWA-приложение</div>
-        <h1>Европейская бытовая химия в Кишинёве с доставкой по всей Молдове</h1>
-        <p class="lead">Современный интернет-магазин для розницы и опта: быстрый каталог, акции, готовые наборы, заявка в WhatsApp/Telegram, CRM и AI-консультант, который помогает подобрать товар 24/7.</p>
+        <span class="eyebrow">Оригинальная бытовая химия из Европы</span>
+        <h1>Современный магазин бытовой химии для дома, семьи и бизнеса</h1>
+        <p class="lead">Широкий ассортимент европейских брендов, удобный каталог, готовые наборы, быстрый заказ и отдельные условия для оптовых клиентов по всей Молдове.</p>
         <div class="hero-actions">
-          <a class="primary-btn big" href="#catalog">Смотреть каталог</a>
-          <a class="secondary-btn big" href="#b2b">Оптовым клиентам</a>
+          <a class="primary-btn big" href="#catalog">Перейти в каталог</a>
+          <a class="secondary-btn big" href="#wholesale">Оптовым клиентам</a>
           <button class="ghost-btn big" id="installPwaTop">Установить приложение</button>
         </div>
         <div class="trust-row">
-          <div><strong>50+</strong><span>брендов</span></div>
-          <div><strong>1000+</strong><span>SKU потенциал</span></div>
-          <div><strong>24/7</strong><span>AI-подбор</span></div>
-          <div><strong>SEO</strong><span>страницы под Google</span></div>
+          <div><strong>50+</strong><span>европейских брендов</span></div>
+          <div><strong>Розница</strong><span>и оптовые поставки</span></div>
+          <div><strong>Кишинёв</strong><span>и вся Молдова</span></div>
+          <div><strong>PWA</strong><span>быстрый доступ с телефона</span></div>
         </div>
       </div>
-      <div class="phone-shell" aria-label="Превью PWA приложения">
+
+      <div class="phone-shell" aria-label="Превью приложения CleanLine">
         <div class="phone-top"><span></span><span></span><span></span></div>
         <div class="app-screen">
           <div class="mini-banner">
             <small>Акция недели</small>
-            <strong>Набор для стирки -15%</strong>
+            <strong>Наборы для дома со скидкой до 15%</strong>
           </div>
-          <div class="mini-search">🔎 Найти Gallus, ONYX, Power Wash...</div>
+          <div class="mini-search">Поиск по бренду, категории или назначению</div>
           <div class="mini-categories">
-            <span>Стирка</span><span>Кухня</span><span>Ванная</span>
+            <span>Стирка</span>
+            <span>Кухня</span>
+            <span>Уборка</span>
           </div>
           <div class="mini-product"><b>Gallus Color 4L</b><span>135 Lei</span></div>
-          <div class="mini-product"><b>ONYX Universal</b><span>105 Lei</span></div>
           <div class="mini-product"><b>Power Wash White</b><span>99 Lei</span></div>
-          <button class="mini-cta" id="installPwaPhone">Установить PWA</button>
+          <div class="mini-product"><b>Alio Classic XXL</b><span>210 Lei</span></div>
+          <button class="mini-cta" id="installPwaPhone">Установить приложение</button>
         </div>
       </div>
     </section>
 
-    <section class="section-pad pains" id="audit">
-      <div class="section-head">
-        <span class="eyebrow">Боли текущего сайта</span>
-        <h2>Что можно показать владельцу как точки роста</h2>
-        <p>Не продавать “сайт ради сайта”, а показать, где теряются заявки, повторные продажи и оптовые клиенты.</p>
+    <section class="section-pad brands">
+      <div class="section-head compact">
+        <span class="eyebrow">Популярные бренды</span>
+        <h2>Бренды, которым доверяют дома и в бизнесе</h2>
       </div>
-      <div class="pain-grid">
-        <article><span>🔍</span><h3>SEO слабее потенциала</h3><p>Категории называются коротко, мало коммерческих текстов, нет отдельных брендовых страниц “Gallus Moldova”, “Power Wash Moldova”, “бытовая химия оптом”.</p></article>
-        <article><span>🧲</span><h3>Слабая конверсия</h3><p>Мало блоков доверия, отзывов, выгод, наборов и сильных призывов к действию. Клиент видит каталог, но не получает причины купить именно здесь.</p></article>
-        <article><span>🏢</span><h3>B2B почти не упакован</h3><p>Для кафе, клининга, автомоек, офисов и магазинов нужна отдельная посадочная страница с формой “получить оптовый прайс”.</p></article>
-        <article><span>📱</span><h3>Нет сильного приложения</h3><p>PWA/Android-витрина повышает возвраты: иконка на экране телефона, push-уведомления, быстрый повторный заказ.</p></article>
+      <div class="brand-grid">
+        <div class="brand-chip">Gallus</div>
+        <div class="brand-chip">Power Wash</div>
+        <div class="brand-chip">ONYX</div>
+        <div class="brand-chip">Passion Gold</div>
+        <div class="brand-chip">Balea</div>
+        <div class="brand-chip">Alio</div>
       </div>
     </section>
 
     <section class="section-pad categories" aria-labelledby="catTitle">
       <div class="section-head compact">
-        <span class="eyebrow">Новая структура</span>
-        <h2 id="catTitle">Категории, которые удобно покупать</h2>
+        <span class="eyebrow">Основные категории</span>
+        <h2 id="catTitle">Удобная структура каталога для быстрых покупок</h2>
       </div>
       <div class="category-grid">
-        <a href="#catalog" data-filter-link="Стирка">🧺 <b>Средства для стирки</b><span>гели, порошки, капсулы</span></a>
-        <a href="#catalog" data-filter-link="Кухня">🍽️ <b>Кухня и посуда</b><span>жир, посуда, таблетки</span></a>
-        <a href="#catalog" data-filter-link="Уборка">🧽 <b>Уборка дома</b><span>ванная, стекло, мебель</span></a>
-        <a href="#catalog" data-filter-link="Гигиена">🧴 <b>Гигиена</b><span>зубная паста, мыло, уход</span></a>
-        <a href="#bundles">🎁 <b>Готовые наборы</b><span>выше средний чек</span></a>
-        <a href="#b2b">🏪 <b>Опт/B2B</b><span>для бизнеса и магазинов</span></a>
+        <a href="#catalog" data-filter-link="Стирка"><b>Средства для стирки</b><span>гели, порошки, кондиционеры, пятновыводители</span></a>
+        <a href="#catalog" data-filter-link="Кухня"><b>Кухня и посуда</b><span>средства от жира, посуда, таблетки</span></a>
+        <a href="#catalog" data-filter-link="Уборка"><b>Уборка дома</b><span>ванная, стекло, мебель, поверхности</span></a>
+        <a href="#catalog" data-filter-link="Гигиена"><b>Гигиена</b><span>уход за телом, пасты, дезодоранты</span></a>
+        <a href="#offers"><b>Акции и наборы</b><span>удобные комплекты для дома</span></a>
+        <a href="#wholesale"><b>Опт и B2B</b><span>условия для бизнеса и партнёров</span></a>
       </div>
     </section>
 
     <section class="section-pad catalog" id="catalog">
       <div class="section-head inline-head">
         <div>
-          <span class="eyebrow">Демо-каталог</span>
+          <span class="eyebrow">Каталог товаров</span>
           <h2>Товары с быстрым заказом</h2>
-          <p>Фильтр, поиск, корзина и заявка в WhatsApp/CRM. В реальном проекте товары импортируются из Excel, CMS или базы Supabase.</p>
+          <p>Поиск по брендам и категориям, удобная корзина и быстрый переход к оформлению заказа.</p>
         </div>
         <div class="search-wrap">
           <input id="searchInput" type="search" placeholder="Найти товар или бренд..." aria-label="Поиск товара" />
@@ -137,161 +138,120 @@
       <div class="product-grid" id="productGrid"></div>
     </section>
 
-    <section class="section-pad bundles" id="bundles">
+    <section class="section-pad offers" id="offers">
       <div class="section-head">
-        <span class="eyebrow">Рост среднего чека</span>
-        <h2>Готовые наборы вместо одиночных покупок</h2>
-        <p>Наборы помогают клиенту быстрее выбрать, а магазину - продавать больше за один заказ.</p>
+        <span class="eyebrow">Готовые решения для дома</span>
+        <h2>Наборы, которые упрощают выбор и экономят время</h2>
+        <p>Комплекты для стирки, кухни и ванной помогают быстро собрать всё необходимое для дома.</p>
       </div>
       <div class="bundle-grid">
-        <article class="bundle-card"><div>🧺</div><h3>Набор “Стирка”</h3><p>Гель + кондиционер + пятновыводитель</p><strong>от 249 Lei</strong><button class="secondary-btn" data-bundle="Набор Стирка">Добавить</button></article>
-        <article class="bundle-card featured"><div>🍳</div><h3>Набор “Кухня без жира”</h3><p>Спрей для плиты + средство для посуды + губки</p><strong>от 179 Lei</strong><button class="primary-btn" data-bundle="Набор Кухня">Добавить</button></article>
-        <article class="bundle-card"><div>🚿</div><h3>Набор “Ванная”</h3><p>Камень/ржавчина + туалет + освежитель</p><strong>от 199 Lei</strong><button class="secondary-btn" data-bundle="Набор Ванная">Добавить</button></article>
+        <article class="bundle-card">
+          <div class="bundle-icon">ST</div>
+          <h3>Набор «Стирка»</h3>
+          <p>Гель, кондиционер и пятновыводитель для ежедневного ухода за бельём.</p>
+          <strong>от 249 Lei</strong>
+          <button class="secondary-btn" data-bundle="Набор Стирка">Добавить</button>
+        </article>
+        <article class="bundle-card featured">
+          <div class="bundle-icon">KU</div>
+          <h3>Набор «Кухня»</h3>
+          <p>Средства от жира, для посуды и ежедневной чистоты рабочих поверхностей.</p>
+          <strong>от 179 Lei</strong>
+          <button class="primary-btn" data-bundle="Набор Кухня">Добавить</button>
+        </article>
+        <article class="bundle-card">
+          <div class="bundle-icon">VA</div>
+          <h3>Набор «Ванная»</h3>
+          <p>Средства от налёта, камня и для поддержания свежести каждый день.</p>
+          <strong>от 199 Lei</strong>
+          <button class="secondary-btn" data-bundle="Набор Ванная">Добавить</button>
+        </article>
       </div>
     </section>
 
-    <section class="section-pad b2b" id="b2b">
+    <section class="section-pad wholesale" id="wholesale">
       <div class="b2b-card">
         <div>
           <span class="eyebrow">CleanLine Business</span>
-          <h2>Отдельное направление для оптовых клиентов</h2>
-          <p>Бытовая химия регулярно нужна кафе, автомойкам, клининговым компаниям, гостиницам, офисам и магазинам. Для них должна быть отдельная посадочная страница и отдельный сценарий продаж.</p>
-          <div class="chips"><span>Рестораны</span><span>Автомойки</span><span>Офисы</span><span>Клининг</span><span>Магазины</span><span>Гостиницы</span></div>
+          <h2>Отдельные условия для магазинов, кафе, клининга и офисов</h2>
+          <p>Регулярные поставки бытовой химии, оптовые цены, удобный ассортимент и быстрый контакт с менеджером для подбора выгодного предложения.</p>
+          <div class="chips"><span>Магазины</span><span>Кафе и рестораны</span><span>Клининг</span><span>Автомойки</span><span>Офисы</span><span>Гостиницы</span></div>
         </div>
         <form class="lead-form" id="b2bForm">
-          <h3>Получить оптовый прайс</h3>
+          <h3>Получить оптовое предложение</h3>
           <label>Имя<input name="name" placeholder="Ваше имя" required></label>
           <label>Телефон<input name="phone" placeholder="+373..." required></label>
-          <label>Тип бизнеса<select name="type"><option>Магазин</option><option>Кафе/ресторан</option><option>Клининг</option><option>Автомойка</option><option>Офис</option></select></label>
+          <label>Тип бизнеса<select name="type"><option>Магазин</option><option>Кафе / ресторан</option><option>Клининг</option><option>Автомойка</option><option>Офис</option></select></label>
           <button class="primary-btn" type="submit">Отправить заявку</button>
-          <small>Демо: заявка сохраняется локально. В реальном проекте уходит в CRM/Telegram/WhatsApp.</small>
+          <small>Менеджер свяжется и подготовит подходящее предложение.</small>
         </form>
       </div>
     </section>
 
     <section class="section-pad app-section" id="app">
       <div class="section-head">
-        <span class="eyebrow">Android / PWA</span>
-        <h2>Приложение без двойного каталога</h2>
-        <p>Один каталог работает на сайте и в приложении. Не нужно отдельно вносить товары в Android и отдельно на сайт.</p>
+        <span class="eyebrow">Приложение</span>
+        <h2>Быстрый доступ к каталогу прямо с экрана телефона</h2>
+        <p>Один каталог работает на сайте и в приложении: клиенту удобно возвращаться, просматривать акции и быстро повторять заказы.</p>
       </div>
       <div class="app-grid">
-        <article><span>📲</span><h3>Установка на экран</h3><p>Клиент сканирует QR-код, открывает сайт и нажимает “Установить приложение”.</p></article>
-        <article><span>🔔</span><h3>Push-уведомления</h3><p>Акции, повторный заказ, напоминание о расходниках. Это возвращает клиента.</p></article>
-        <article><span>🧾</span><h3>История заказов</h3><p>Покупатель быстро повторяет прошлый заказ. Менеджер видит историю в CRM.</p></article>
-        <article><span>🤖</span><h3>AI-консультант</h3><p>Помогает выбрать средство для белого, чёрного, кухни, камня, детской одежды.</p></article>
+        <article><h3>Установка за минуту</h3><p>Сайт можно добавить на главный экран телефона и использовать как удобное приложение.</p></article>
+        <article><h3>Быстрый повторный заказ</h3><p>Клиент находит нужные товары быстрее и возвращается к покупкам без лишних шагов.</p></article>
+        <article><h3>Актуальные акции</h3><p>Новые предложения и подборки всегда под рукой — это помогает чаще возвращаться в магазин.</p></article>
+        <article><h3>Удобно для постоянных клиентов</h3><p>Подходит для розницы, семейных покупок и тех, кто регулярно заказывает расходные товары.</p></article>
       </div>
     </section>
 
-    <section class="section-pad seo" id="seo">
-      <div class="section-head inline-head">
-        <div>
-          <span class="eyebrow">SEO-архитектура</span>
-          <h2>Страницы, которые должны собирать бесплатный трафик</h2>
-          <p>Для Google важны отдельные посадочные страницы под категорию, бренд, город, опт и проблему клиента.</p>
-        </div>
-        <a class="ghost-btn" href="pages/gallus-moldova.html">Открыть SEO-страницу</a>
-      </div>
-      <div class="seo-grid">
-        <a href="pages/sredstva-dlya-stirki.html"><b>Средства для стирки в Кишинёве</b><span>/pages/sredstva-dlya-stirki.html</span></a>
-        <a href="pages/gallus-moldova.html"><b>Gallus Moldova</b><span>/pages/gallus-moldova.html</span></a>
-        <a href="pages/opt.html"><b>Бытовая химия оптом</b><span>/pages/opt.html</span></a>
-        <a href="pages/b2b.html"><b>Поставки для бизнеса</b><span>/pages/b2b.html</span></a>
-      </div>
-      <div class="seo-checklist">
-        <div><strong>Title/H1</strong><span>Коммерческие: “купить”, “Кишинёв”, “Молдова”, бренд</span></div>
-        <div><strong>Schema.org</strong><span>Product, Store, BreadcrumbList, FAQPage</span></div>
-        <div><strong>Sitemap</strong><span>Автоматическое добавление SEO-страниц</span></div>
-        <div><strong>GA4/GSC</strong><span>Источники трафика, запросы, заявки</span></div>
-      </div>
-    </section>
-
-    <section class="section-pad analytics">
+    <section class="section-pad delivery" id="delivery">
       <div class="section-head">
-        <span class="eyebrow">CRM и аналитика</span>
-        <h2>Владелец должен видеть, откуда деньги</h2>
+        <span class="eyebrow">Сервис</span>
+        <h2>Удобный сценарий покупки от выбора до заказа</h2>
       </div>
-      <div class="dash">
-        <div class="metric"><span>Заявки сегодня</span><strong id="metricLeads">18</strong><small>WhatsApp + сайт + PWA</small></div>
-        <div class="metric"><span>Средний чек</span><strong>312 Lei</strong><small>растёт за счёт наборов</small></div>
-        <div class="metric"><span>B2B заявки</span><strong>6</strong><small>страница опта</small></div>
-        <div class="metric"><span>Повторные заказы</span><strong>34%</strong><small>push + база клиентов</small></div>
-      </div>
-      <div class="flow">
-        <span>Сайт/PWA</span><b>→</b><span>Корзина/форма</span><b>→</b><span>CRM</span><b>→</b><span>Telegram менеджеру</span><b>→</b><span>Повторные продажи</span>
-      </div>
-    </section>
-
-    <section class="section-pad ai-block">
-      <div class="ai-panel">
-        <div>
-          <span class="eyebrow">AI-консультант</span>
-          <h2>Пример сценария для клиента</h2>
-          <p>ИИ не заменяет продавца, а снимает типовые вопросы: наличие, подбор, доставка, цена, повторный заказ.</p>
-        </div>
-        <div class="chat-demo" id="chatDemo">
-          <div class="msg user">Нужен гель для чёрной одежды. Что посоветуете?</div>
-          <div class="msg bot">Подойдёт Power Wash BLACK 4L или Gallus Black 4L. Могу оформить заказ и отправить менеджеру.</div>
-          <div class="quick-questions">
-            <button data-q="Для белого белья">Для белого белья</button>
-            <button data-q="Чем убрать жир на кухне">Жир на кухне</button>
-            <button data-q="Оптовый прайс">Оптовый прайс</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad offer" id="offer">
-      <div class="section-head">
-        <span class="eyebrow">Коммерческое предложение</span>
-        <h2>Как упаковать услугу для владельца</h2>
-        <p>Предложение лучше подавать не как “сделаю сайт”, а как “сделаю систему роста продаж”.</p>
-      </div>
-      <div class="pricing-grid">
-        <article><h3>Старт</h3><p>Редизайн главной + PWA-основа + базовое SEO</p><strong>от 700€</strong><ul><li>Главная страница</li><li>Каталог демо</li><li>SEO title/description</li><li>QR на приложение</li></ul></article>
-        <article class="featured"><h3>Бизнес</h3><p>Новый сайт + приложение + SEO-страницы + заявки</p><strong>от 1500€</strong><ul><li>Каталог и корзина</li><li>Оптовая страница</li><li>20 SEO-страниц</li><li>GA4/GSC/Pixel</li></ul></article>
-        <article><h3>Премиум</h3><p>Сайт + CRM + AI-консультант + автоматизация</p><strong>от 3000€</strong><ul><li>Supabase/CRM</li><li>AI Telegram/WhatsApp</li><li>Push-уведомления</li><li>аналитика продаж</li></ul></article>
-      </div>
-    </section>
-
-    <section class="section-pad final-cta">
-      <h2>Готовый заход к владельцу</h2>
-      <p>“Я посмотрел ваш сайт. У вас хороший ассортимент, но сайт теряет бесплатный трафик, оптовых клиентов и повторные продажи. Я подготовил демо, как может выглядеть новая система: современный сайт, PWA-приложение, SEO-страницы, CRM и AI-консультант.”</p>
-      <div class="hero-actions centered">
-        <button class="primary-btn big" data-open-lead>Показать заявку</button>
-        <a class="secondary-btn big" href="docs/proposal.md">Открыть предложение</a>
+      <div class="service-grid">
+        <article>
+          <h3>Доставка</h3>
+          <p>По Кишинёву и всей Молдове. Удобный контакт с менеджером и согласование деталей заказа.</p>
+        </article>
+        <article>
+          <h3>Каталог для розницы и бизнеса</h3>
+          <p>Один сайт закрывает и обычных покупателей, и тех, кому нужен отдельный оптовый сценарий.</p>
+        </article>
+        <article>
+          <h3>Быстрая консультация</h3>
+          <p>Покупателю легко понять, что выбрать для стирки, кухни, ванной и ежедневной уборки.</p>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="brand"><span class="brand-mark">CL</span><span><strong>CleanLine</strong><small>demo 2.0</small></span></div>
-    <p>Демо-концепция: современный сайт, PWA, SEO, B2B и CRM. Контакты в демо взяты из публичной информации сайта.</p>
+    <div class="brand"><span class="brand-mark">CL</span><span class="brand-text"><strong>CleanLine</strong><small>European Home Care</small></span></div>
+    <p>Европейская бытовая химия и товары для дома. Розница, опт и удобный заказ с телефона.</p>
     <a href="#top">Наверх ↑</a>
   </footer>
 
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-head"><h3>Корзина демо</h3><button id="closeCart">×</button></div>
+    <div class="drawer-head"><h3>Корзина</h3><button id="closeCart">×</button></div>
     <div id="cartItems" class="cart-items"></div>
     <div class="cart-total"><span>Итого</span><strong id="cartTotal">0 Lei</strong></div>
-    <a class="primary-btn full" id="whatsappOrder" href="#" target="_blank" rel="noopener">Отправить заказ в WhatsApp</a>
-    <small>Демо: ссылка формирует текст заказа. В реальном проекте заказ уходит ещё и в CRM.</small>
+    <a class="primary-btn full" id="whatsappOrder" href="#" target="_blank" rel="noopener">Оформить в WhatsApp</a>
+    <small>Товары из корзины можно сразу отправить менеджеру для подтверждения заказа.</small>
   </aside>
   <div class="overlay" id="overlay"></div>
 
   <dialog class="lead-dialog" id="leadDialog">
     <form method="dialog" class="lead-modal" id="leadModalForm">
       <button class="dialog-close" value="cancel">×</button>
-      <span class="eyebrow">Заявка</span>
-      <h3>Получить консультацию / оптовый прайс</h3>
+      <span class="eyebrow">Обратная связь</span>
+      <h3>Получить прайс или консультацию</h3>
       <label>Имя<input name="name" placeholder="Ваше имя" required></label>
       <label>Телефон<input name="phone" placeholder="+373..." required></label>
-      <label>Что интересно?<select name="interest"><option>Новый сайт и PWA</option><option>SEO-продвижение</option><option>Оптовый прайс</option><option>CRM и AI-консультант</option></select></label>
-      <button class="primary-btn full" type="submit">Сохранить заявку</button>
+      <label>Что вас интересует?<select name="interest"><option>Каталог товаров</option><option>Оптовое предложение</option><option>Доставка</option><option>Подбор продукции</option></select></label>
+      <button class="primary-btn full" type="submit">Отправить заявку</button>
     </form>
   </dialog>
 
-  <button class="floating-ai" id="openAi">🤖 AI</button>
+  <button class="floating-ai" id="openAi">Консультант</button>
   <div class="toast" id="toast">Готово</div>
 
   <script src="app.js"></script>
