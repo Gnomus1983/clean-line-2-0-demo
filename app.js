@@ -1,17 +1,17 @@
 const phone = '37362047482';
 const products = [
-  {id:'gallus-color', name:'Гель для стирки Gallus Color 4L, 100 стирок', brand:'Gallus', cat:'Стирка', price:135, old:null, badges:['Хит']},
-  {id:'power-white', name:'Гель для стирки Power Wash White 4L', brand:'Power Wash', cat:'Стирка', price:99, old:125, badges:['Скидка']},
-  {id:'onyx-color', name:'Гель для стирки ONYX Color 4.64L', brand:'ONYX', cat:'Стирка', price:105, old:null, badges:['Хит','Скидка']},
-  {id:'passion-balsam', name:'Passion Gold ополаскиватель Fresh Spring 2L', brand:'Passion Gold', cat:'Стирка', price:79, old:null, badges:[]},
-  {id:'gallus-spray', name:'Gallus спрей для кухни и плиты 750 мл', brand:'Gallus', cat:'Уборка', price:65, old:null, badges:['Хит']},
-  {id:'passion-stone', name:'Passion Gold от камня и ржавчины 750 мл', brand:'Passion Gold', cat:'Уборка', price:51, old:null, badges:['Хит']},
-  {id:'alio-tabs', name:'Alio Classic XXL таблетки для посудомоечной машины 100 шт.', brand:'Alio', cat:'Кухня', price:210, old:null, badges:['Хит']},
-  {id:'power-lemon', name:'Power Wash Lemon 5L для посуды', brand:'Power Wash', cat:'Кухня', price:140, old:null, badges:['Хит']},
-  {id:'balea-cream', name:'Balea крем для лица и тела 250 мл', brand:'Balea', cat:'Гигиена', price:55, old:null, badges:['Новинка']},
-  {id:'truesmile', name:'Truesmile Baking Soda Whitening 100 мл', brand:'Truesmile', cat:'Гигиена', price:35, old:null, badges:['Хит']},
-  {id:'forea-men', name:'Forea Men Aqua дезодорант 50 мл', brand:'Forea', cat:'Гигиена', price:28, old:null, badges:['Новинка']},
-  {id:'paper-patrice', name:'Patrice Monoroll кухонное полотенце 2 слоя', brand:'Patrice', cat:'Кухня', price:65, old:null, badges:['Хит']}
+  {id:'gallus-color', name:'Гель для стирки Gallus Color 4L, 100 стирок', brand:'Gallus', cat:'Стирка', price:129, old:149, badges:['Хит']},
+  {id:'power-white', name:'Гель для стирки Power Wash White 4L', brand:'Power Wash', cat:'Стирка', price:109, old:129, badges:['Скидка']},
+  {id:'onyx-color', name:'Гель для стирки ONYX Color 4.64L', brand:'ONYX', cat:'Стирка', price:119, old:139, badges:['Хит','Скидка']},
+  {id:'passion-balsam', name:'Passion Gold ополаскиватель Fresh Spring 2L', brand:'Passion Gold', cat:'Стирка', price:84, old:null, badges:[]},
+  {id:'gallus-spray', name:'Gallus спрей для кухни и плиты 750 мл', brand:'Gallus', cat:'Уборка', price:69, old:null, badges:['Хит']},
+  {id:'passion-stone', name:'Passion Gold от камня и ржавчины 750 мл', brand:'Passion Gold', cat:'Уборка', price:59, old:null, badges:['Хит']},
+  {id:'alio-tabs', name:'Alio Classic XXL таблетки для посудомоечной машины 100 шт.', brand:'Alio', cat:'Кухня', price:229, old:249, badges:['Хит']},
+  {id:'power-lemon', name:'Power Wash Lemon 5L для посуды', brand:'Power Wash', cat:'Кухня', price:149, old:null, badges:['Хит']},
+  {id:'balea-cream', name:'Balea крем для лица и тела 250 мл', brand:'Balea', cat:'Гигиена', price:59, old:null, badges:['Новинка']},
+  {id:'truesmile', name:'Truesmile Baking Soda Whitening 100 мл', brand:'Truesmile', cat:'Гигиена', price:39, old:null, badges:['Хит']},
+  {id:'forea-men', name:'Forea Men Aqua дезодорант 50 мл', brand:'Forea', cat:'Гигиена', price:32, old:null, badges:['Новинка']},
+  {id:'paper-patrice', name:'Patrice Monoroll кухонное полотенце 2 слоя', brand:'Patrice', cat:'Кухня', price:72, old:null, badges:['Хит']}
 ];
 
 let activeFilter = 'all';
@@ -79,6 +79,7 @@ function closeCart(){
   $('#overlay')?.classList.remove('show');
   $('#cartDrawer').setAttribute('aria-hidden','true');
 }
+function closeLeadDialog(){ $('#leadDialog')?.close(); }
 
 function saveLead(form, label='Заявка отправлена'){
   const data = Object.fromEntries(new FormData(form).entries());
@@ -136,18 +137,23 @@ document.body.addEventListener('click', e=>{
   if(fl){ setTimeout(()=>scrollFilter(fl.dataset.filterLink), 60); }
 
   if(e.target.matches('[data-open-lead]')) $('#leadDialog')?.showModal();
-  if(e.target.closest('.dialog-close')) $('#leadDialog')?.close();
+  if(e.target.closest('.dialog-close')){
+    e.preventDefault();
+    e.stopPropagation();
+    closeLeadDialog();
+  }
 });
 
-$('#cartButton')?.addEventListener('click', openCart);
 $('#closeCart')?.addEventListener('click', closeCart);
 $('#overlay')?.addEventListener('click', closeCart);
+$('#cartButton')?.addEventListener('click', openCart);
 $('#b2bForm')?.addEventListener('submit', e=>{ e.preventDefault(); saveLead(e.currentTarget,'Заявка отправлена'); e.currentTarget.reset(); });
-$('#leadModalForm')?.addEventListener('submit', e=>{ e.preventDefault(); saveLead(e.currentTarget,'Спасибо! Мы скоро свяжемся с вами'); $('#leadDialog')?.close(); e.currentTarget.reset(); });
+$('#leadModalForm')?.addEventListener('submit', e=>{ e.preventDefault(); saveLead(e.currentTarget,'Спасибо! Мы скоро свяжемся с вами'); closeLeadDialog(); e.currentTarget.reset(); });
+$('.dialog-close')?.addEventListener('click', e=>{ e.preventDefault(); closeLeadDialog(); });
 $('#installPwaTop')?.addEventListener('click', installPwa);
 $('#installPwaPhone')?.addEventListener('click', installPwa);
 $('#openAi')?.addEventListener('click', ()=>document.querySelector('#wholesale')?.scrollIntoView({behavior:'smooth'}));
 
 if('serviceWorker' in navigator){
-  window.addEventListener('load', ()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+  window.addEventListener('load', ()=>navigator.serviceWorker.register('sw.js').then(reg=>reg.update()).catch(()=>{}));
 }
